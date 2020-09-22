@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour {
         timeText.text = string.Format("Time: {0:00}:{1:00.00} ([F4] to exit game)", min, sec);
     }
 
-    public void GameOver() {
+    public void GameOver(Vector3 position) {
         gameActive = false;
         timeText.text = "Game Over! Press [R] to restart";
 
@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour {
         //StartCoroutine(MusicSlowdown(1f));
 
         // 카메라 확대
-        StartCoroutine(CameraZoomIn(5f));
+        StartCoroutine(CameraZoomIn(5f, position));
     }
 
     public void Reset() {
@@ -104,9 +104,9 @@ public class GameManager : MonoBehaviour {
         music.Stop();
     }
 
-    IEnumerator CameraZoomIn(float time) {
+    IEnumerator CameraZoomIn(float time, Vector3 position) {
 
-        Vector3 target = cam.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 target = position;
 
         Vector3 v_velocity = Vector3.zero;
         float s_velocity = 0f;

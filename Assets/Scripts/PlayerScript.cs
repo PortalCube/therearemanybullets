@@ -31,7 +31,7 @@ public class PlayerScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (GameManager.instance.gameActive && collision.gameObject.tag == "deathObject") {
-            GameManager.instance.GameOver();
+            GameManager.instance.GameOver(transform.position);
         }
     }
 }
