@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour {
     public bool gameActive = true;
     public bool removeObj = false;
     public AudioSource music;
-    public int fps = 60;
     Camera cam;
 
     void Awake() {
@@ -46,27 +45,27 @@ public class GameManager : MonoBehaviour {
         time += Time.deltaTime;
         float sec = time % 60f;
         int min = Mathf.FloorToInt(time / 60);
-        timeText.text = string.Format("Time: {0:00}:{1:00.00}", min, sec);
+        timeText.text = string.Format("Time: {0:00}:{1:00.00} ([F4] to exit game)", min, sec);
     }
 
     public void GameOver() {
         gameActive = false;
-        timeText.text = "Game Over!";
-        
-        // 음악 느려지며 중지
-        StartCoroutine(MusicSlowdown(1f, fps));
+        timeText.text = "Game Over! Press [R] to restart";
+
+        // 음악 느려지며 중지 -- disabled
+        //StartCoroutine(MusicSlowdown(1f));
 
         // 카메라 확대
-        StartCoroutine(CameraZoomIn(5f, fps));
+        StartCoroutine(CameraZoomIn(5f));
     }
 
     public void Reset() {
         StopAllCoroutines();
         time = 0;
-        StartCoroutine(ResetGame(3f, fps));
+        StartCoroutine(ResetGame(3f));
     }
 
-    IEnumerator ResetGame(float time, int fps) {
+    IEnumerator ResetGame(float time) {
         gameActive = false;
         removeObj = true;
 
@@ -79,12 +78,12 @@ public class GameManager : MonoBehaviour {
 
         float waitTime = time;
 
-        for (int i = 0; i < time * fps; i++) {
-            waitTime -= 1f / fps;
+        while (waitTime > 0) {
+            waitTime -= Time.deltaTime;
             float sec = waitTime % 60f;
             int min = Mathf.FloorToInt(waitTime / 60);
             timeText.text = string.Format("Start in: {0:00}:{1:00.00}", min, sec);
-            yield return new WaitForSecondsRealtime(1f / fps);
+            yield return null;
         }
 
         music.Play();
@@ -93,17 +92,19 @@ public class GameManager : MonoBehaviour {
         gameActive = true;
     }
 
-    IEnumerator MusicSlowdown(float time, int fps) {
+    IEnumerator MusicSlowdown(float time) {
+        float waitTime = time;
 
-        for (int i = 0; i < time * fps; i++) {
-            music.pitch = 1 - (i / (float)fps);
-            yield return new WaitForSecondsRealtime(1f / fps);
+        while (waitTime > 0) {
+            waitTime -= Time.deltaTime;
+            music.pitch = waitTime / time;
+            yield return null;
         }
 
         music.Stop();
     }
 
-    IEnumerator CameraZoomIn(float time, int fps) {
+    IEnumerator CameraZoomIn(float time) {
 
         Vector3 target = cam.ScreenToWorldPoint(Input.mousePosition);
 
@@ -112,10 +113,13 @@ public class GameManager : MonoBehaviour {
 
         target.z = -10;
 
-        for (int i = 0; i < time * fps; i++) {
-            cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, 2f, ref s_velocity, 0.08f);
-            cam.transform.position = Vector3.SmoothDamp(cam.transform.position, target, ref v_velocity, 0.08f);
-            yield return new WaitForSecondsRealtime(1f / fps);
+        float waitTime = time;
+
+        while (waitTime > 0) {
+            waitTime -= Time.deltaTime;
+            cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, 1.5f, ref s_velocity, 0.5f);
+            cam.transform.position = Vector3.SmoothDamp(cam.transform.position, target, ref v_velocity, 0.5f);
+            yield return null;
         }
 
     }
