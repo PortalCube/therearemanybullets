@@ -9,7 +9,7 @@ public class SpreadBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
     public float range = 0;
     public bool isEqually = true;
 
-    public GameObject movingBullet;
+    public GameObject bullet;
 
     // Start is called before the first frame update
     void Start() {
@@ -24,14 +24,14 @@ public class SpreadBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
         Vector3 vector = transform.localPosition;
 
         for (int i = 0; i < amount; i++) {
-            GameObject bulletObject = Instantiate(movingBullet, vector, Quaternion.identity);
+            GameObject bulletObject = Instantiate(bullet, vector, Quaternion.identity);
 
             var bulletScript = bulletObject.GetComponent<MovingBulletScript>();
 
             bulletScript.direction = direction - (range / 2);
             bulletScript.speed = Random.Range(minSpeed, maxSpeed);
 
-            if (isEqually) {
+            if (isEqually && amount > 1) {
                 bulletScript.direction += range / (amount - 1) * i;
             } else {
                 bulletScript.direction += Random.Range(0, range);

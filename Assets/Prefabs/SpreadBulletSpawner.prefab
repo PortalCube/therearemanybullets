@@ -100,8 +100,8 @@ MonoBehaviour:
   maxSpeed: 3
   direction: 0
   range: 0
-  movingBullet: {fileID: 3025252745092360021, guid: c61801dc3b1017a4ba5a7d629470b74b,
-    type: 3}
+  isEqually: 1
+  bullet: {fileID: 3025252745092360021, guid: c61801dc3b1017a4ba5a7d629470b74b, type: 3}
 --- !u!114 &-8587197692050797679
 MonoBehaviour:
   m_ObjectHideFlags: 0

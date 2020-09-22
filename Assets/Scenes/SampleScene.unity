@@ -198,6 +198,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallBulletSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2177682794972983394, guid: 91faef41519a7c94687a6633ccadde30,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91faef41519a7c94687a6633ccadde30, type: 3}
 --- !u!1 &519420028
@@ -551,7 +556,7 @@ PrefabInstance:
     - target: {fileID: 5017492433945438893, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -670,6 +675,12 @@ PrefabInstance:
     - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: movingBullet
+      value: 
+      objectReference: {fileID: 1908523341933239925, guid: 7c29bfd2f055a60479b7dd5a5ef7c3d9,
+        type: 3}
+    - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
+        type: 3}
+      propertyPath: bullet
       value: 
       objectReference: {fileID: 1908523341933239925, guid: 7c29bfd2f055a60479b7dd5a5ef7c3d9,
         type: 3}
