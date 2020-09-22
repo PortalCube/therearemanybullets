@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour {
         time += Time.deltaTime;
         float sec = time % 60f;
         int min = Mathf.FloorToInt(time / 60);
-        timeText.text = string.Format("Time: {0:00}:{1:00.00} ([F4] to exit game)", min, sec);
+        timeText.text = string.Format("Time: {0:00}:{1:00.00}\nPress [Alt+F4] to exit game", min, sec);
     }
 
     public void GameOver(Vector3 position) {
