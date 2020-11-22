@@ -6,17 +6,13 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
 
-<<<<<<< Updated upstream
-    float time = 0;
-=======
     public int bulletCount = 0;
->>>>>>> Stashed changes
     public Text timeText;
+    public Text bulletText;
     public bool gameActive = true;
     public bool removeObj = false;
     public AudioSource music;
     Camera cam;
-
 
     public float Time { get { return music.time; } }
 
@@ -66,14 +62,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-<<<<<<< Updated upstream
     void UpdateTime() {
-        time += Time.deltaTime;
-        float sec = time % 60f;
-        int min = Mathf.FloorToInt(time / 60);
-        timeText.text = string.Format("Time: {0:00}:{1:00.00}\nPress [Alt+F4] to exit game", min, sec);
-=======
-    void UpdateUI() {
         if (gameActive) {
             float sec = Time % 60f;
             int min = Mathf.FloorToInt(Time / 60);
@@ -81,7 +70,6 @@ public class GameManager : MonoBehaviour {
         }
 
         bulletText.text = string.Format("Bullets: {0}", bulletCount);
->>>>>>> Stashed changes
     }
 
     public void GameOver(Vector3 position) {

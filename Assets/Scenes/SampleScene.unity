@@ -121,23 +121,13 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< Updated upstream
---- !u!1001 &98634311
-=======
 --- !u!1001 &22019110
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< Updated upstream
-    - target: {fileID: 2177682794972983392, guid: 91faef41519a7c94687a6633ccadde30,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8
-=======
     - target: {fileID: -8587197692050797679, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: interval
@@ -375,16 +365,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.4094137
->>>>>>> Stashed changes
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017492433945438893, guid: a08d15129ae3dbb4fa825b3eea866e02,
+        type: 3}
+      propertyPath: m_Name
+      value: SpreadBulletSpawner (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017492433945438893, guid: a08d15129ae3dbb4fa825b3eea866e02,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
+        type: 3}
+      propertyPath: range
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
+        type: 3}
+      propertyPath: minSpeed
+      value: 4.7
       objectReference: {fileID: 0}
     - target: {fileID: 2177682794972983392, guid: 91faef41519a7c94687a6633ccadde30,
         type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< Updated upstream
-      value: 3
-=======
       value: -0.72552687
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 2177682794972983392, guid: 91faef41519a7c94687a6633ccadde30,
         type: 3}
@@ -431,52 +436,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 2177682794972983393, guid: 91faef41519a7c94687a6633ccadde30,
         type: 3}
-      propertyPath: direction
-      value: 0
-=======
-    - target: {fileID: 5017492433945438893, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_Name
-      value: SpreadBulletSpawner (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5017492433945438893, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: range
-      value: 360
-      objectReference: {fileID: 0}
-    - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: minSpeed
-      value: 4.7
->>>>>>> Stashed changes
-      objectReference: {fileID: 0}
-    - target: {fileID: 2177682794972983393, guid: 91faef41519a7c94687a6633ccadde30,
-        type: 3}
-<<<<<<< Updated upstream
-      propertyPath: vertical
-      value: 0
-=======
       propertyPath: maxSpeed
       value: 4.7
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 2177682794972983394, guid: 91faef41519a7c94687a6633ccadde30,
         type: 3}
-<<<<<<< Updated upstream
-      propertyPath: m_Name
-      value: WallBulletSpawner
-=======
       propertyPath: amount
       value: 24
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 2177682794972983394, guid: 91faef41519a7c94687a6633ccadde30,
         type: 3}
@@ -484,9 +452,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-<<<<<<< Updated upstream
-  m_SourcePrefab: {fileID: 100100000, guid: 91faef41519a7c94687a6633ccadde30, type: 3}
-=======
   m_SourcePrefab: {fileID: 100100000, guid: a08d15129ae3dbb4fa825b3eea866e02, type: 3}
 --- !u!1 &236514129
 GameObject:
@@ -604,7 +569,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
->>>>>>> Stashed changes
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,21 +639,6 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &519420032
-<<<<<<< Updated upstream
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1035,7 +984,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a08d15129ae3dbb4fa825b3eea866e02, type: 3}
->>>>>>> Stashed changes
 --- !u!1 &874042532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,6 +1075,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2107267721}
+  - {fileID: 525167739}
+  - {fileID: 1035476074}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1135,8 +1085,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1001 &974265509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1349,7 +1297,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035476073}
   m_CullTransparentMesh: 0
->>>>>>> Stashed changes
 --- !u!1 &1156248909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,11 +1376,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
---- !u!1001 &1393061567
-=======
 --- !u!1001 &1236712327
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1443,11 +1386,7 @@ PrefabInstance:
     - target: {fileID: -8587197692050797679, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: interval
-<<<<<<< Updated upstream
-      value: 1
-=======
       value: 0.1
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8587197692050797679, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -1467,20 +1406,12 @@ PrefabInstance:
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< Updated upstream
-      value: -8
-=======
       value: 7.409414
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< Updated upstream
-      value: 0
-=======
       value: 5.274473
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -1500,11 +1431,7 @@ PrefabInstance:
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: m_LocalRotation.z
-<<<<<<< Updated upstream
-      value: 0
-=======
       value: 0.99144495
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -1514,11 +1441,7 @@ PrefabInstance:
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< Updated upstream
-      value: 6
-=======
       value: 5
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -1548,11 +1471,7 @@ PrefabInstance:
     - target: {fileID: 5017492433945438893, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: m_Name
-<<<<<<< Updated upstream
-      value: SpreadBulletSpawner
-=======
       value: SpreadBulletSpawner (10)
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 5017492433945438893, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -1562,38 +1481,22 @@ PrefabInstance:
     - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: range
-<<<<<<< Updated upstream
-      value: 20
-=======
       value: 0
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: minSpeed
-<<<<<<< Updated upstream
-      value: 2
-=======
       value: 4.7
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: maxSpeed
-<<<<<<< Updated upstream
-      value: 2
-=======
       value: 4.7
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: amount
-<<<<<<< Updated upstream
-      value: 6
-=======
       value: 1
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -1607,183 +1510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a08d15129ae3dbb4fa825b3eea866e02, type: 3}
-<<<<<<< Updated upstream
---- !u!1001 &1483370222
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8587197692050797679, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: interval
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8587197692050797679, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: minInterval
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8587197692050797679, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: count
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5017492433945438893, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: m_Name
-      value: SpreadBulletSpawner (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: amount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: movingBullet
-      value: 
-      objectReference: {fileID: 1908523341933239925, guid: 7c29bfd2f055a60479b7dd5a5ef7c3d9,
-        type: 3}
-    - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 1908523341933239925, guid: 7c29bfd2f055a60479b7dd5a5ef7c3d9,
-        type: 3}
-    - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
-        type: 3}
-      propertyPath: range
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a08d15129ae3dbb4fa825b3eea866e02, type: 3}
---- !u!1 &1542242294
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1542242297}
-  - component: {fileID: 1542242296}
-  - component: {fileID: 1542242295}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1542242295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542242294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1542242296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542242294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1542242297
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542242294}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1622576276
-=======
 --- !u!1001 &1329167867
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1793,9 +1520,6 @@ PrefabInstance:
     - target: {fileID: -8587197692050797679, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: interval
-<<<<<<< Updated upstream
-      value: 1
-=======
       value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8587197692050797679, guid: a08d15129ae3dbb4fa825b3eea866e02,
@@ -1896,7 +1620,6 @@ PrefabInstance:
         type: 3}
       propertyPath: interval
       value: 0.05
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8587197692050797679, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -1916,20 +1639,12 @@ PrefabInstance:
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< Updated upstream
-      value: 4
-=======
       value: 1.4094137
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< Updated upstream
-      value: 0
-=======
       value: -0.72552687
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -1959,11 +1674,7 @@ PrefabInstance:
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< Updated upstream
-      value: 9
-=======
       value: 0
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -2008,11 +1719,7 @@ PrefabInstance:
     - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: amount
-<<<<<<< Updated upstream
-      value: 24
-=======
       value: 3
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -2026,8 +1733,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a08d15129ae3dbb4fa825b3eea866e02, type: 3}
-<<<<<<< Updated upstream
-=======
 --- !u!4 &1429736157 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
@@ -2166,7 +1871,6 @@ Transform:
   m_Father: {fileID: 1555822163}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &1830936662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,7 +1901,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80dd77807ab1e094487592882d1c34f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletCount: 0
   timeText: {fileID: 2107267719}
+  bulletText: {fileID: 1035476075}
   gameActive: 1
   removeObj: 0
   music: {fileID: 1830936665}
@@ -2311,8 +2017,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1864793020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,7 +2205,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 974265509}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1 &2107267718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,9 +2255,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Time: 00:00.00
-
-    Press [Alt+F4] to exit game'
+  m_Text: 'Time: 00:00.00'
 --- !u!222 &2107267720
 CanvasRenderer:
   m_ObjectHideFlags: 0
