@@ -31,7 +31,7 @@ public class SpreadBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
             bulletScript.speed = Random.Range(minSpeed, maxSpeed);
 
             if (isEqually && amount > 1) {
-                bulletScript.direction += range / (amount - 1) * (i + 1);
+                bulletScript.direction += range / amount * (i + 1);
             } else {
                 bulletScript.direction += Random.Range(0, range);
             }
