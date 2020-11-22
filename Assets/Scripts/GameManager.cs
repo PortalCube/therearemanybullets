@@ -6,12 +6,19 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
 
+<<<<<<< Updated upstream
     float time = 0;
+=======
+    public int bulletCount = 0;
+>>>>>>> Stashed changes
     public Text timeText;
     public bool gameActive = true;
     public bool removeObj = false;
     public AudioSource music;
     Camera cam;
+
+
+    public float Time { get { return music.time; } }
 
     void Awake() {
         instance = this;
@@ -22,12 +29,30 @@ public class GameManager : MonoBehaviour {
         // 카메라 세팅
         cam = Camera.main;
 
+        Init();
+    }
+
+    void Init(bool isReset = false) {
+        StopAllCoroutines();
+
         // 마우스 세팅
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
 
-        // 음악 재생 -- disabled
-        // music.Play();
+        // 게임 상태 세팅
+        gameActive = false;
+        removeObj = true;
+
+        // 음악 초기화
+        music.Stop();
+        music.time = 0;
+        music.pitch = 1;
+
+        // 카메라 초기화
+        cam.orthographicSize = 5;
+        cam.transform.position = new Vector3(0, 0, -10);
+
+        StartCoroutine(ResumeGame(1f));
     }
 
     // Update is called once per frame
@@ -37,15 +62,26 @@ public class GameManager : MonoBehaviour {
         }
 
         if (Input.GetKey(KeyCode.R) && !removeObj) {
-            Reset();
+            Init(true);
         }
     }
 
+<<<<<<< Updated upstream
     void UpdateTime() {
         time += Time.deltaTime;
         float sec = time % 60f;
         int min = Mathf.FloorToInt(time / 60);
         timeText.text = string.Format("Time: {0:00}:{1:00.00}\nPress [Alt+F4] to exit game", min, sec);
+=======
+    void UpdateUI() {
+        if (gameActive) {
+            float sec = Time % 60f;
+            int min = Mathf.FloorToInt(Time / 60);
+            timeText.text = string.Format("Time: {0:00}:{1:00.00}", min, sec);
+        }
+
+        bulletText.text = string.Format("Bullets: {0}", bulletCount);
+>>>>>>> Stashed changes
     }
 
     public void GameOver(Vector3 position) {
@@ -53,50 +89,34 @@ public class GameManager : MonoBehaviour {
         timeText.text = "Game Over! Press [R] to restart";
 
         // 음악 느려지며 중지 -- disabled
-        //StartCoroutine(MusicSlowdown(1f));
+        StartCoroutine(MusicSlowdown(1f));
 
         // 카메라 확대
         StartCoroutine(CameraZoomIn(5f, position));
     }
 
-    public void Reset() {
-        StopAllCoroutines();
-        time = 0;
-        StartCoroutine(ResetGame(3f));
-    }
-
-    IEnumerator ResetGame(float time) {
-        gameActive = false;
-        removeObj = true;
-
-        music.Stop();
-
-        cam.orthographicSize = 5;
-        cam.transform.position = new Vector3(0, 0, -10);
-
-        music.pitch = 1;
-
-        float waitTime = time;
-
-        while (waitTime > 0) {
-            waitTime -= Time.deltaTime;
-            float sec = waitTime % 60f;
-            int min = Mathf.FloorToInt(waitTime / 60);
+    IEnumerator ResumeGame(float time) {
+        while (time > 0) {
+            time -= UnityEngine.Time.deltaTime;
+            float sec = time % 60f;
+            int min = Mathf.FloorToInt(time / 60);
             timeText.text = string.Format("Start in: {0:00}:{1:00.00}", min, sec);
             yield return null;
         }
 
-        music.Play();
-
+        // 게임 상태 세팅
         removeObj = false;
         gameActive = true;
+
+        // 음악 재생
+        music.Play();
     }
 
     IEnumerator MusicSlowdown(float time) {
         float waitTime = time;
 
         while (waitTime > 0) {
-            waitTime -= Time.deltaTime;
+            waitTime -= UnityEngine.Time.deltaTime;
             music.pitch = waitTime / time;
             yield return null;
         }
@@ -116,7 +136,7 @@ public class GameManager : MonoBehaviour {
         float waitTime = time;
 
         while (waitTime > 0) {
-            waitTime -= Time.deltaTime;
+            waitTime -= UnityEngine.Time.deltaTime;
             cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, 1.5f, ref s_velocity, 0.5f);
             cam.transform.position = Vector3.SmoothDamp(cam.transform.position, target, ref v_velocity, 0.5f);
             yield return null;

@@ -4,14 +4,13 @@ public class WallBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
 
     public int amount = 4;
     public float speed = 3f;
-    public float direction = 0;
     public bool vertical = false;
 
     public GameObject movingBullet;
 
     // Start is called before the first frame update
     void Start() {
-        transform.localRotation = Quaternion.Euler(0, 0, direction);
+
     }
 
     // Update is called once per frame
@@ -37,7 +36,7 @@ public class WallBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
 
             var bulletScript = bulletObject.GetComponent<MovingBulletScript>();
 
-            bulletScript.direction = direction;
+            bulletScript.direction = transform.localRotation.eulerAngles.z;
             bulletScript.speed = speed;
 
             if (vertical) {

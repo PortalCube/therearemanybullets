@@ -5,7 +5,6 @@ public class SpreadBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
     public int amount = 5;
     public float minSpeed = 3f;
     public float maxSpeed = 3f;
-    public float direction = 0;
     public float range = 0;
     public bool isEqually = true;
 
@@ -13,7 +12,7 @@ public class SpreadBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
 
     // Start is called before the first frame update
     void Start() {
-        transform.localRotation = Quaternion.Euler(0, 0, direction);
+
     }
 
     // Update is called once per frame
@@ -28,11 +27,11 @@ public class SpreadBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
 
             var bulletScript = bulletObject.GetComponent<MovingBulletScript>();
 
-            bulletScript.direction = direction - (range / 2);
+            bulletScript.direction = transform.localRotation.eulerAngles.z - (range / 2);
             bulletScript.speed = Random.Range(minSpeed, maxSpeed);
 
             if (isEqually && amount > 1) {
-                bulletScript.direction += range / (amount - 1) * i;
+                bulletScript.direction += range / (amount - 1) * (i + 1);
             } else {
                 bulletScript.direction += Random.Range(0, range);
             }
