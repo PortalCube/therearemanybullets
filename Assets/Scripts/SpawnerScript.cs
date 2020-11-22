@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class SpawnerScript : MonoBehaviour
 {
-    public float interval = 0.5f;
+    public float startTime = 0f;
+    public float endTime = 999f;
+
+    public float intervalOffset = 0;
+
+    private float interval = 0.5f;
+    private int count = 1;
 
     public float minInterval = 0.5f;
     public float maxInterval = 1f;
 
-    public float offset = 0;
-
-    public int count = 1;
-
     public int minCount = 3;
     public int maxCount = 5;
-
-    public bool randomInterval = false;
-    public bool randomCount = false;
 
     public MonoBehaviour spawner;
     IBulletSpawner bulletSpawner;
@@ -28,22 +27,25 @@ public class SpawnerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (randomInterval) {
-            interval = Random.Range(minInterval, maxInterval);
-        }
-
-        if (randomCount) {
-            count = Random.Range(minCount, maxCount);
-        }
+        interval = Random.Range(minInterval, maxInterval);
+        count = Random.Range(minCount, maxCount);
 
         bulletSpawner = (IBulletSpawner)spawner;
 
-        time = offset % interval;
+        time = intervalOffset % interval;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.instance.Time < startTime) {
+            return;
+        }
+
+        if (GameManager.instance.Time > endTime) {
+            return;
+        }
+
         if (GameManager.instance.gameActive) {
             time += Time.deltaTime;
 
@@ -54,7 +56,7 @@ public class SpawnerScript : MonoBehaviour
                     Destroy(gameObject);
                 }
 
-                if (randomInterval) {
+                if (minInterval != maxInterval) {
                     interval = Random.Range(minInterval, maxInterval);
                 }
 
