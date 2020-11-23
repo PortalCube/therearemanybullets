@@ -9,7 +9,7 @@ public class SpinnerScript : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         _speed = speed;
-        StartCoroutine(SmoothChange(-50, 8));
+        //StartCoroutine(SmoothChange(-50, 8));
     }
 
     // Update is called once per frame
