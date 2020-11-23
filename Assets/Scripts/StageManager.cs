@@ -45,6 +45,7 @@ public class StageManager : MonoBehaviour {
         }
 
         commands.Sort((a, b) => (int)(a.time - b.time));
+        Debug.Log(commands);
     }
 
     void ConstructDictionary() {

@@ -1,30 +1,35 @@
 {
     "list": [
         {
-            "id": "t1",
-            "type": 0,
+            "id": "intro_01",
+            "type": "Spread",
             "position": [0, 0, 0],
-            "time": [0, 99],
+            "args": [],
+            "time": [0, 15],
             "commands": [
                 {
                     "time": 0,
-                    "command": "A()",
-                    "args": [3, 4, 7]
+                    "command": "Spin.Linear",
+                    "args": [2]
                 },
                 {
-                    "time": 4,
-                    "command": "B()",
-                    "args": [9, 7, 2]
-                },
+                    "time": 5,
+                    "command": "Spin.Smooth",
+                    "args": [-8, 5]
+                }
+            ]
+        },
+        {
+            "id": "intro_02",
+            "type": "Spread",
+            "position": [0, 0, 0],
+            "args": [],
+            "time": [0, 15],
+            "commands": [
                 {
-                    "time": 7,
-                    "command": "C()",
-                    "args": [1, 2, 4]
-                },
-                {
-                    "time": 2,
-                    "command": "D()",
-                    "args": [1, 2]
+                    "time": 0,
+                    "command": "Move.WithBullet",
+                    "args": [60]
                 }
             ]
         }
