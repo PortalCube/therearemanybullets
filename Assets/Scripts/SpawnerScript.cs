@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SpawnerScript : MonoBehaviour
 {
-    private float interval = 0.5f;
+    public float interval = 0.5f;
     public float intervalOffset = 0;
 
-    private int count = 1;
+    public int count = 1;
 
     public MonoBehaviour spawner;
     IBulletSpawner bulletSpawner;
