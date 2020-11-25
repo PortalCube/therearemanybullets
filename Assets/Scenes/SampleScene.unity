@@ -707,7 +707,7 @@ PrefabInstance:
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4685716231315721095, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -763,6 +763,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpreadBulletSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017492433945438893, guid: a08d15129ae3dbb4fa825b3eea866e02,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8749868358237650288, guid: a08d15129ae3dbb4fa825b3eea866e02,
         type: 3}
@@ -1645,7 +1650,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 147579cb8d10ea0429836d51f30538ab, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.35
   m_Pitch: 1
   Loop: 1
   Mute: 0
