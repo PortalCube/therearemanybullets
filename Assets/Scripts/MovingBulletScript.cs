@@ -7,10 +7,7 @@ public class MovingBulletScript : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        // 잘못된 값을 가진 경우, 즉시 제거
-        if (speed <= 0) {
-            Destroy(this.gameObject);
-        }
+
     }
 
     // Update is called once per frame
