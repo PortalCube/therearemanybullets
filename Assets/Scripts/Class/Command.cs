@@ -10,10 +10,10 @@ public class Command{
 
     public Command() { }
 
-    public Command(string id, float time, string command) {
+    public Command(string id, float time, List<float> args, string command) {
         this.id = id;
         this.time = time;
         this.command = command;
-        args = new List<float>();
+        this.args = args;
     }
 }
