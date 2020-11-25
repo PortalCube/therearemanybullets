@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour {
         // 카메라 세팅
         cam = Camera.main;
 
+        Screen.SetResolution(800, 800, false);
+
         Init();
     }
 
@@ -41,7 +43,6 @@ public class GameManager : MonoBehaviour {
         // 게임 상태 세팅
         gameActive = false;
         removeObj = true;
-
 
         // 음악 초기화
         music.Stop();
