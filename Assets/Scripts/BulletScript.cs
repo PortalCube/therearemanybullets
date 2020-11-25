@@ -7,7 +7,7 @@ public class BulletScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameManager.instance.bulletCount++;
     }
 
     // Update is called once per frame
@@ -22,6 +22,7 @@ public class BulletScript : MonoBehaviour
         // 게임 구역을 나가는 경우, 제거
         if (collision.gameObject.tag == "playArea") {
             Destroy(gameObject);
+            GameManager.instance.bulletCount--;
         }
     }
 }

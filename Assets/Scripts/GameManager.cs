@@ -31,6 +31,9 @@ public class GameManager : MonoBehaviour {
     void Init(bool isReset = false) {
         StopAllCoroutines();
 
+        // 스테이지 초기화
+        StageManager.instance.Init();
+
         // 마우스 세팅
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
@@ -39,9 +42,10 @@ public class GameManager : MonoBehaviour {
         gameActive = false;
         removeObj = true;
 
+
         // 음악 초기화
         music.Stop();
-        music.time = 0;
+        music.time = 0f;
         music.pitch = 1;
 
         // 카메라 초기화
@@ -95,6 +99,7 @@ public class GameManager : MonoBehaviour {
         // 게임 상태 세팅
         removeObj = false;
         gameActive = true;
+        bulletCount = 0;
 
         // 음악 재생
         music.Play();
