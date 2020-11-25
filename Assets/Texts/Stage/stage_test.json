@@ -2,34 +2,51 @@
     "list": [
         {
             "id": "intro_01",
-            "type": "Spread",
+            "type": 1,
             "position": [0, 0, 0],
-            "args": [],
-            "time": [0, 15],
+            "rotation": [0, 0, 0],
+            "args": [0.05, 0, 2, 3, 3, 180, 1],
+            "time": [12, 39.6],
             "commands": [
                 {
-                    "time": 0,
+                    "time": 12,
                     "command": "Spin.Linear",
-                    "args": [2]
+                    "args": [5]
                 },
                 {
-                    "time": 5,
+                    "time": 12,
+                    "command": "Blink.On",
+                    "args": [0.5, 0.5, 0.57]
+                },
+                {
+                    "time": 28,
+                    "command": "Blink.Off",
+                    "args": []
+                },
+                {
+                    "time": 28,
                     "command": "Spin.Smooth",
-                    "args": [-8, 5]
+                    "args": [0, 2]
+                },
+                {
+                    "time": 30,
+                    "command": "Spin.Smooth",
+                    "args": [-72, 6]
                 }
             ]
         },
         {
-            "id": "intro_02",
-            "type": "Spread",
+            "id": "phase_1_01",
+            "type": 1,
             "position": [0, 0, 0],
-            "args": [],
-            "time": [0, 15],
+            "rotation": [0, 0, 0],
+            "args": [0.2, 0, 24, 6.66, 6.66, 360, 1],
+            "time": [40.2, 72],
             "commands": [
                 {
-                    "time": 0,
-                    "command": "Move.WithBullet",
-                    "args": [60]
+                    "time": 40.2,
+                    "command": "Spin.Linear",
+                    "args": [26.66]
                 }
             ]
         }
