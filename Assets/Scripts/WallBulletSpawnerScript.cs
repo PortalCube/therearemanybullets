@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class WallBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
 
@@ -16,6 +17,11 @@ public class WallBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
     // Update is called once per frame
     void Update() {
 
+    }
+    public void Init(List<float> args) {
+        this.amount = (int)args[0];
+        this.speed = args[1];
+        this.vertical = args[2] == 1;
     }
 
     public void Fire() {
