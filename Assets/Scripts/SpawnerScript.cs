@@ -12,8 +12,9 @@ public class SpawnerScript : MonoBehaviour
     public MonoBehaviour spawner;
     IBulletSpawner bulletSpawner;
 
-    float time = 0;
-    int total = 0;
+    private float time = 0;
+    private int total = 0;
+    private bool status = true;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,11 @@ public class SpawnerScript : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (!status) {
+            return;
+        }
+
+
         time += Time.deltaTime;
 
         if (time >= interval) {
@@ -41,5 +47,14 @@ public class SpawnerScript : MonoBehaviour
 
             time = 0;
         }
+    }
+
+    public void Init(List<float> args) {
+        interval = args[0];
+        intervalOffset = args[1];
+    }
+
+    public void SetStatus(bool value) {
+        status = value;
     }
 }
