@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour {
         Screen.SetResolution(800, 800, false);
 
         Init();
+        music.time = 0f;
     }
 
     void Init(bool isReset = false) {
@@ -46,7 +47,7 @@ public class GameManager : MonoBehaviour {
 
         // 음악 초기화
         music.Stop();
-        music.time = 0f;
+        music.time = 12f;
         music.pitch = 1;
 
         // 카메라 초기화
