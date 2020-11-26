@@ -29,11 +29,11 @@ public class SpreadBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
     }
 
     public void Init(List<float> args) {
-        this.amount = (int)args[0];
-        this.minSpeed = args[1];
-        this.maxSpeed = args[2];
-        this.range = args[3];
-        this.isEqually = args[4] == 1;
+        amount = (int)args[0];
+        minSpeed = args[1];
+        maxSpeed = args[2];
+        range = args[3];
+        isEqually = args[4] == 1;
     }
 
     public void Fire() {

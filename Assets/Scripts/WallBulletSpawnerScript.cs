@@ -28,9 +28,9 @@ public class WallBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
     }
 
     public void Init(List<float> args) {
-        this.amount = (int)args[0];
-        this.speed = args[1];
-        this.vertical = args[2] == 1;
+        amount = (int)args[0];
+        speed = args[1];
+        vertical = args[2] == 1;
     }
 
     public void Fire() {
