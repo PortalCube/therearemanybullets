@@ -29,13 +29,11 @@ public class MoveObjScript : MonoBehaviour {
 
     public void Smooth(List<float> args) {
         direction = args[0];
-        StartCoroutine(SmoothCoroutine(args[1], args[2]));
+        StartCoroutine(SmoothCoroutine(args[1], args[2], args[3]));
     }
 
-    IEnumerator SmoothCoroutine(float value, float time) {
+    IEnumerator SmoothCoroutine(float start, float end, float time) {
         float t = 0.0f;
-        float start = speed;
-        float end = value;
         while (t <= 1.0f) {
             t += Time.deltaTime / time;
             speed = Mathf.Lerp(start, end, Mathf.SmoothStep(0.0f, 1.0f, t));
