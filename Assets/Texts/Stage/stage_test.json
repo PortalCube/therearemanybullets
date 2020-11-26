@@ -1,7 +1,7 @@
 {
     "list": [
         {
-            "id": "intro_01",
+            "id": "intro_main",
             "type": 1,
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
@@ -26,27 +26,92 @@
                 {
                     "time": 28,
                     "command": "Spin.Smooth",
-                    "args": [0, 2]
+                    "args": [5, 0, 2]
                 },
                 {
                     "time": 30,
                     "command": "Spin.Smooth",
-                    "args": [-72, 6]
+                    "args": [0, -72, 6]
                 }
             ]
         },
         {
-            "id": "phase_1_01",
+            "id": "phase_1_main",
             "type": 1,
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],
-            "args": [0.2, 0, 24, 6.66, 6.66, 360, 1],
-            "time": [40.2, 72],
+            "args": [0.2, 0, 16, 6, 6, 360, 1],
+            "time": [40.2, 71],
             "commands": [
                 {
                     "time": 40.2,
                     "command": "Spin.Linear",
-                    "args": [26.66]
+                    "args": [16]
+                },
+                {
+                    "time": 70,
+                    "command": "Spin.Smooth",
+                    "args": [16, 66, 2]
+                }
+            ]
+        },
+        {
+            "id": "phase_1_wall_1",
+            "type": 3,
+            "position": [-8, 7, 0],
+            "rotation": [0, 0, -80],
+            "args": [0.1, 0, 6, 0],
+            "time": [54, 72],
+            "commands": [
+                {
+                    "time": 55,
+                    "command": "Move.Smooth",
+                    "args": [90, 0.8, -0.8, 11]
+                }
+            ]
+        },
+        {
+            "id": "phase_1_wall_2",
+            "type": 3,
+            "position": [8, -7, 0],
+            "rotation": [0, 0, 100],
+            "args": [0.1, 0, 6, 0],
+            "time": [54, 72],
+            "commands": [
+                {
+                    "time": 55,
+                    "command": "Move.Smooth",
+                    "args": [90, 0.8, -0.8, 11]
+                }
+            ]
+        },
+        {
+            "id": "phase_1_wall_3",
+            "type": 3,
+            "position": [-7, -8, 0],
+            "rotation": [0, 0, 10],
+            "args": [0.1, 0, 6, 0],
+            "time": [62, 72],
+            "commands": [
+                {
+                    "time": 63,
+                    "command": "Move.Smooth",
+                    "args": [90, 0.8, -0.8, 11]
+                }
+            ]
+        },
+        {
+            "id": "phase_1_wall_4",
+            "type": 3,
+            "position": [7, 8, 0],
+            "rotation": [0, 0, 190],
+            "args": [0.1, 0, 6, 0],
+            "time": [62, 72],
+            "commands": [
+                {
+                    "time": 63,
+                    "command": "Move.Smooth",
+                    "args": [90, 0.8, -0.8, 11]
                 }
             ]
         }
