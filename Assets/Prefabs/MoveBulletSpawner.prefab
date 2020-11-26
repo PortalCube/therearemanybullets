@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 5399095642481516721}
   - component: {fileID: -7566439223114409455}
   - component: {fileID: 1710731040306829437}
-  - component: {fileID: 913111585131742343}
-  - component: {fileID: 5076524974752748693}
   m_Layer: 0
   m_Name: MoveBulletSpawner
   m_TagString: Untagged
@@ -116,31 +114,3 @@ MonoBehaviour:
   intervalOffset: 0
   count: 0
   spawner: {fileID: -7566439223114409455}
---- !u!114 &913111585131742343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6541530324688189761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ed610c03b24a3747a38b3579208d18c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
---- !u!114 &5076524974752748693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6541530324688189761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0c59c52d3a750b4eaa617a63cef2f84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireTime: 1
-  sleepTime: 0
-  offset: 0

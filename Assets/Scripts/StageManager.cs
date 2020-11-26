@@ -114,7 +114,7 @@ public class StageManager : MonoBehaviour {
 
         switch (header) {
             case "Spin":
-                script = spawners[command.id].GetComponent<SpinnerScript>();
+                script = spawners[command.id].AddComponent<SpinnerScript>();
                 switch (method) {
                     case "Linear":
                         ((SpinnerScript) script).Linear(command.args);
@@ -127,7 +127,7 @@ public class StageManager : MonoBehaviour {
             case "Move":
                 break;
             case "Blink":
-                script = spawners[command.id].GetComponent<BlinkScript>();
+                script = spawners[command.id].AddComponent<BlinkScript>();
                 switch (method) {
                     case "On":
                         ((BlinkScript) script).On(command.args);
