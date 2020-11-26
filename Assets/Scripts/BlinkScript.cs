@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class BlinkScript : MonoBehaviour
-{
+public class BlinkScript : MonoBehaviour {
     public float fireTime = 1f;
     public float sleepTime = 0f;
     public float offset = 0;
@@ -12,9 +10,8 @@ public class BlinkScript : MonoBehaviour
     private float time = 0f;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Start() {
+
     }
 
     public void On(List<float> args) {
