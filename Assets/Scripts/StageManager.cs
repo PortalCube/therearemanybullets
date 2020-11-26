@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class StageManager : MonoBehaviour {
 
@@ -65,14 +63,6 @@ public class StageManager : MonoBehaviour {
         });
     }
 
-    void ConstructDictionary() {
-
-    }
-
-    //public void RegisterAction(string key, Action<List<int>> action) {
-    //    functions.Add(key, action);
-    //}
-
     // Update is called once per frame
     void Update() {
         if (!GameManager.instance.gameActive) {
@@ -91,11 +81,10 @@ public class StageManager : MonoBehaviour {
                     ExcuteCommand(commands[0]);
                     break;
             }
-            Debug.Log(commands[0].time + ": " + commands[0].command);
             commands.RemoveAt(0);
         }
     }
-    
+
     private void StartSpawner(Command command) {
         GameObject prefab = prefabs[Convert.ToInt32(command.args[0])];
         command.args.RemoveAt(0);
@@ -128,18 +117,27 @@ public class StageManager : MonoBehaviour {
 
         switch (header) {
             case "Spin":
-                script = spawners[command.id].AddComponent<SpinnerScript>();
+                script = spawners[command.id].GetComponent<SpinnerScript>();
+
+                if (script == null) {
+                    script = spawners[command.id].AddComponent<SpinnerScript>();
+                }
+                
                 switch (method) {
                     case "Linear":
-                        ((SpinnerScript) script).Linear(command.args);
+                        ((SpinnerScript)script).Linear(command.args);
                         break;
                     case "Smooth":
-                        ((SpinnerScript) script).Smooth(command.args);
+                        ((SpinnerScript)script).Smooth(command.args);
                         break;
                 }
                 break;
             case "Move":
-                script = spawners[command.id].AddComponent<MoveObjScript>();
+                script = spawners[command.id].GetComponent<MoveObjScript>();
+
+                if (script == null) {
+                    script = spawners[command.id].AddComponent<MoveObjScript>();
+                }
                 switch (method) {
                     case "Linear":
                         ((MoveObjScript)script).Linear(command.args);
@@ -150,10 +148,14 @@ public class StageManager : MonoBehaviour {
                 }
                 break;
             case "Blink":
-                script = spawners[command.id].AddComponent<BlinkScript>();
+                script = spawners[command.id].GetComponent<BlinkScript>();
+
+                if (script == null) {
+                    script = spawners[command.id].AddComponent<BlinkScript>();
+                }
                 switch (method) {
                     case "On":
-                        ((BlinkScript) script).On(command.args);
+                        ((BlinkScript)script).On(command.args);
                         break;
                     case "Off":
                         ((BlinkScript)script).Off();
