@@ -15,13 +15,9 @@ public class MoveObjScript : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (GameManager.instance.gameActive) {
-            Vector3 vector = new Vector3(speed * Time.deltaTime, 0, 0);
-
-            // 각도 설정
-            transform.localRotation = Quaternion.Euler(0, 0, direction);
-
-            // 앞으로 전진
-            transform.Translate(vector);
+            
+            Vector3 vector = new Vector3(Mathf.Cos(Mathf.Deg2Rad * direction), Mathf.Sin(Mathf.Deg2Rad * direction), 0);
+            transform.Translate(vector * speed * Time.deltaTime);
         }
     }
 
