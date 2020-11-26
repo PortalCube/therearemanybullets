@@ -26,7 +26,10 @@ public class MoveBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
         return direction;
     }
 
-    public void Init(List<float> args) { }
+    public void Init(List<float> args) {
+        speed = args[0];
+        direction = args[1];
+    }
 
     public void Fire() {
         Vector3 vector = transform.localPosition;
