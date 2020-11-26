@@ -48,7 +48,21 @@ public class StageManager : MonoBehaviour {
             commands.AddRange(spawner.commands);
         }
 
-        commands.Sort((a, b) => (int)(a.time - b.time));
+        commands.Sort((a, b) => {
+            if (a.time < b.time) {
+                return -1;
+            } else if (a.time > b.time) {
+                return 1;
+            } else {
+                if (a.command == "Create") {
+                    return -1;
+                } else if (b.command == "Create") {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            }
+        });
     }
 
     void ConstructDictionary() {
@@ -125,6 +139,15 @@ public class StageManager : MonoBehaviour {
                 }
                 break;
             case "Move":
+                script = spawners[command.id].AddComponent<MoveObjScript>();
+                switch (method) {
+                    case "Linear":
+                        ((MoveObjScript)script).Linear(command.args);
+                        break;
+                    case "Smooth":
+                        ((MoveObjScript)script).Smooth(command.args);
+                        break;
+                }
                 break;
             case "Blink":
                 script = spawners[command.id].AddComponent<BlinkScript>();
