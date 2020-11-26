@@ -33,16 +33,16 @@ public class MoveBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
 
     public void Fire() {
         Vector3 vector = transform.localPosition;
-        direction = transform.localRotation.eulerAngles.z;
 
         GameObject bulletObject = Instantiate(bullet, vector, Quaternion.identity);
+        bulletObject.transform.SetParent(transform);
 
         var bulletScript = bulletObject.GetComponent<MovingBulletScript>();
 
         bulletScript.direction = GetDirection();
         bulletScript.speed = GetSpeed();
-        bulletScript.lockToParent = true;
-        bulletScript.spawner = this;
+        //bulletScript.lockToParent = true;
+        //bulletScript.spawner = this;
     }
 
 }
