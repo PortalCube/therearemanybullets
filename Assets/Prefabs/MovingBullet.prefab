@@ -136,6 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 0
   speed: 0
+  lockToParent: 0
 --- !u!114 &-5618919547939145316
 MonoBehaviour:
   m_ObjectHideFlags: 0
