@@ -20,6 +20,14 @@ public class SpreadBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
     void Update() {
     }
 
+    public float GetSpeed() {
+        return Random.Range(minSpeed, maxSpeed);
+    }
+
+    public float GetDirection() {
+        return transform.localRotation.eulerAngles.z - (range / 2);
+    }
+
     public void Init(List<float> args) {
         this.amount = (int)args[0];
         this.minSpeed = args[1];
@@ -30,18 +38,17 @@ public class SpreadBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
 
     public void Fire() {
         Vector3 vector = transform.localPosition;
-        float direction = transform.localRotation.eulerAngles.z - (range / 2);
 
         for (int i = 1; i <= amount; i++) {
             GameObject bulletObject = Instantiate(bullet, vector, Quaternion.identity);
 
             var bulletScript = bulletObject.GetComponent<MovingBulletScript>();
 
-            bulletScript.direction = direction;
-            bulletScript.speed = Random.Range(minSpeed, maxSpeed);
+            bulletScript.direction = GetDirection();
+            bulletScript.speed = GetSpeed();
 
             if (isEqually && amount > 1) {
-                direction += range / (amount - 1);
+                bulletScript.direction += range / (amount - 1) * i;
             } else {
                 bulletScript.direction += Random.Range(0, range);
             }

@@ -18,6 +18,15 @@ public class WallBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
     void Update() {
 
     }
+
+    public float GetSpeed() {
+        return speed;
+    }
+
+    public float GetDirection() {
+        return transform.localRotation.eulerAngles.z;
+    }
+
     public void Init(List<float> args) {
         this.amount = (int)args[0];
         this.speed = args[1];
@@ -42,8 +51,8 @@ public class WallBulletSpawnerScript : MonoBehaviour, IBulletSpawner {
 
             var bulletScript = bulletObject.GetComponent<MovingBulletScript>();
 
-            bulletScript.direction = transform.localRotation.eulerAngles.z;
-            bulletScript.speed = speed;
+            bulletScript.direction = GetDirection();
+            bulletScript.speed = GetSpeed();
 
             if (vertical) {
                 vector += transform.right * 0.25f;
