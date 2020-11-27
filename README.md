@@ -1,5 +1,5 @@
+<img src="https://raw.githubusercontent.com/PortalCube/therearemanybullets/master/Github/Title.png" width="480px"></img>
 # therearemanybullets
-
 (이전 프로젝트명: DodgeSurvival)
 
 약 2분 40초 동안 죽지 않고 무수히 많은 총알 세례를 버텨내시면 됩니다!
