@@ -6,13 +6,14 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
 
-    public int bulletCount = 0;
     public Text timeText;
-    public Text bulletText;
+    public Text retryText;
     public bool gameActive = true;
     public bool removeObj = false;
     public AudioSource music;
     Camera cam;
+
+    private int retry = -1;
 
     public float Time { get { return music.time; } }
 
@@ -31,7 +32,7 @@ public class GameManager : MonoBehaviour {
         music.time = 0f;
     }
 
-    void Init(bool isReset = false) {
+    void Init() {
         StopAllCoroutines();
 
         // 스테이지 초기화
@@ -55,6 +56,8 @@ public class GameManager : MonoBehaviour {
         cam.transform.position = new Vector3(0, 0, -10);
 
         StartCoroutine(ResumeGame(1f));
+        retry++;
+        retryText.text = string.Format("Retry | {0}", retry);
     }
 
     // Update is called once per frame
@@ -63,8 +66,12 @@ public class GameManager : MonoBehaviour {
             UpdateTime();
         }
 
+        if (Input.GetKey(KeyCode.F4)) {
+            Application.Quit();
+        }
+
         if (Input.GetKey(KeyCode.R) && !removeObj) {
-            Init(true);
+            Init();
         }
     }
 
@@ -72,15 +79,12 @@ public class GameManager : MonoBehaviour {
         if (gameActive) {
             float sec = Time % 60f;
             int min = Mathf.FloorToInt(Time / 60);
-            timeText.text = string.Format("Time: {0:00}:{1:00.00}", min, sec);
+            timeText.text = string.Format("Time  | {0:00}:{1:00}", min, sec);
         }
-
-        bulletText.text = string.Format("Bullets: {0}", bulletCount);
     }
 
     public void GameOver(Vector3 position) {
         gameActive = false;
-        timeText.text = "Game Over! Press [R] to restart";
 
         // 음악 느려지며 중지 -- disabled
         StartCoroutine(MusicSlowdown(1f));
@@ -90,18 +94,15 @@ public class GameManager : MonoBehaviour {
     }
 
     IEnumerator ResumeGame(float time) {
+        timeText.text = string.Format("Time  | 00:00");
         while (time > 0) {
             time -= UnityEngine.Time.deltaTime;
-            float sec = time % 60f;
-            int min = Mathf.FloorToInt(time / 60);
-            timeText.text = string.Format("Start in: {0:00}:{1:00.00}", min, sec);
             yield return null;
         }
 
         // 게임 상태 세팅
         removeObj = false;
         gameActive = true;
-        bulletCount = 0;
 
         // 음악 재생
         music.Play();

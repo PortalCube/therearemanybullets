@@ -1,0 +1,31 @@
+{
+    "list": [
+        {
+            "id": "title",
+            "position": [0, 100, 0],
+            "rotation": [0, 0, 0],
+            "type": 1,
+            "needCanvas": true,
+            "start": 0,
+            "end": 12
+        },
+        {
+            "id": "title_bgm",
+            "position": [175, 60, 0],
+            "rotation": [0, 0, 0],
+            "type": 2,
+            "needCanvas": true,
+            "start": 4.3,
+            "end": 12
+        },
+        {
+            "id": "title_game",
+            "position": [175, 35, 0],
+            "rotation": [0, 0, 0],
+            "type": 3,
+            "needCanvas": true,
+            "start": 8.3,
+            "end": 12
+        }
+    ]
+}
