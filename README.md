@@ -1,11 +1,13 @@
 <img src="https://raw.githubusercontent.com/PortalCube/therearemanybullets/master/Github/Title.png" width="480px"></img>
+
 # therearemanybullets
+
 (이전 프로젝트명: DodgeSurvival)
 
 약 2분 40초 동안 죽지 않고 무수히 많은 총알 세례를 버텨내시면 됩니다!
 과연 몇트만에 클리어 해낼 수 있을까요...?
 
-[Alpha 3 다운로드](https://github.com/PortalCube/therearemanybullets/releases/tag/v0.0.3)<br>
+[Alpha 3a 다운로드](https://github.com/PortalCube/therearemanybullets/releases/tag/v0.0.3.1)<br>
 **주의: 아직 많은 부분이 미완성되어있는 상태입니다.**
 
 # 기본 정보
