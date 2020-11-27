@@ -37,8 +37,13 @@ public class ArtManager : MonoBehaviour {
             args.AddRange(art.rotation);
             args.Add(art.needCanvas ? 1 : 0);
 
-            commands.Add(new Command(art.id, art.start, args, "Create"));
-            commands.Add(new Command(art.id, art.end, args, "Destroy"));
+            if (GameManager.instance.retry < 0 || art.start >= 12) {
+                commands.Add(new Command(art.id, art.start, args, "Create"));
+            }
+
+            if (GameManager.instance.retry < 0 || art.end >= 12) {
+                commands.Add(new Command(art.id, art.end, args, "Destroy"));
+            }
         }
 
         commands.Sort((a, b) => {
@@ -56,6 +61,15 @@ public class ArtManager : MonoBehaviour {
                 }
             }
         });
+    }
+
+    public void Reset() {
+        while (commands.Count > 0) {
+            if (commands[0].command == "Destroy") {
+                DestoryArt(commands[0]);
+            }
+            commands.RemoveAt(0);
+        }
     }
 
     // Update is called once per frame
@@ -100,7 +114,9 @@ public class ArtManager : MonoBehaviour {
     }
 
     private void DestoryArt(Command command) {
-        Destroy(arts[command.id]);
-        arts.Remove(command.id);
+        if (arts.ContainsKey(command.id)) {
+            Destroy(arts[command.id]);
+            arts.Remove(command.id);
+        }
     }
 }

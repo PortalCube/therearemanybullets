@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
     public AudioSource music;
     Camera cam;
 
-    private int retry = -1;
+    public int retry = -1;
 
     public float Time { get { return music.time; } }
 
@@ -36,6 +36,8 @@ public class GameManager : MonoBehaviour {
         StopAllCoroutines();
 
         // 스테이지 초기화
+        ArtManager.instance.Reset();
+        ArtManager.instance.Init();
         StageManager.instance.Init();
 
         // 마우스 세팅
