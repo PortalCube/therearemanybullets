@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour {
         if (gameActive) {
             float sec = Time % 60f;
             int min = Mathf.FloorToInt(Time / 60);
-            timeText.text = string.Format("Time  | {0:00}:{1:00.00}", min, sec);
+            timeText.text = string.Format("Time  | {0:00}:{1:00}", min, sec);
         }
     }
 

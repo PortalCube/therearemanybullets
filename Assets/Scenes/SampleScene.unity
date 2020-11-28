@@ -1616,8 +1616,8 @@ MonoBehaviour:
   retryText: {fileID: 1357209326}
   gameActive: 1
   removeObj: 0
-  debugMode: 1
-  startPosition: 95
+  debugMode: 0
+  startPosition: 0
   music: {fileID: 1830936665}
   retry: -1
 --- !u!4 &1830936664
