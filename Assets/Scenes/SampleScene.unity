@@ -322,6 +322,9 @@ MonoBehaviour:
   - {fileID: 616301276274896758, guid: fdacebce7f56b68478480fc55cd0a946, type: 3}
   - {fileID: 2194460740479521422, guid: 9a432ddea533ef145b759be6fd404d11, type: 3}
   - {fileID: 6767560830491117871, guid: f90267e8af344534e95fa5d740649af7, type: 3}
+  - {fileID: 6371368163136527706, guid: a7f422bccffda714db7a1e0605df5a1b, type: 3}
+  - {fileID: 150966873559638622, guid: 649b11fb777f85343b3efee9f81dcc1f, type: 3}
+  - {fileID: 7241017277533248831, guid: ff6abfe4fd92850499d28d6814771a67, type: 3}
 --- !u!4 &778218673
 Transform:
   m_ObjectHideFlags: 0
@@ -805,7 +808,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.35
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

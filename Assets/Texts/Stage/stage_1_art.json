@@ -566,6 +566,33 @@
             "needCanvas": false,
             "start": 113.2,
             "end": 116.3
+        },
+        {
+            "id": "victory_1",
+            "position": [0, 110, 0],
+            "rotation": [0, 0, 0],
+            "type": 8,
+            "needCanvas": true,
+            "start": 159.5,
+            "end": 999
+        },
+        {
+            "id": "victory_2",
+            "position": [0, 75, 0],
+            "rotation": [0, 0, 0],
+            "type": 9,
+            "needCanvas": true,
+            "start": 161.5,
+            "end": 999
+        },
+        {
+            "id": "victory_3",
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "type": 10,
+            "needCanvas": true,
+            "start": 163,
+            "end": 999
         }
     ]
 }
