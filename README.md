@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/PortalCube/therearemanybullets/master/Github/Title.png" width="480px"></img>
+[![therearemanybullets](https://img.youtube.com/vi/aTNhpl_2w88/0.jpg)](https://youtu.be/aTNhpl_2w88)
 
 # therearemanybullets
 
@@ -38,6 +38,8 @@ bgm에 맞춰서 나타나는 무수한 총알들을 피하시면 됩니다. 약
 
 ## 스크린샷
 
+<img src="https://raw.githubusercontent.com/PortalCube/therearemanybullets/master/Github/Title.png" width="480px"></img>
+<br>
 <img src="https://raw.githubusercontent.com/PortalCube/therearemanybullets/master/Github/Screenshot_1.png" width="360px"></img>
 <img src="https://raw.githubusercontent.com/PortalCube/therearemanybullets/master/Github/Screenshot_2.png" width="360px"></img>
 <img src="https://raw.githubusercontent.com/PortalCube/therearemanybullets/master/Github/Screenshot_3.png" width="360px"></img>
