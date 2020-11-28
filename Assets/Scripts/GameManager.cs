@@ -27,7 +27,6 @@ public class GameManager : MonoBehaviour {
     void Start() {
         // 카메라 세팅
         cam = Camera.main;
-
         Screen.SetResolution(800, 800, false);
 
         Init();

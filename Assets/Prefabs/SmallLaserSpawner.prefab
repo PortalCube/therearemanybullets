@@ -49,7 +49,7 @@ MonoBehaviour:
   maxSpeed: 20
   range: 0
   isEqually: 1
-  bullet: {fileID: 1492122106442745881, guid: 0ba70f50908131c4b981ddf7cacef30b, type: 3}
+  bullet: {fileID: 2495597081404499786, guid: a13c3375325108b4bb0d6bec8823e1f7, type: 3}
 --- !u!114 &3882367655280339094
 MonoBehaviour:
   m_ObjectHideFlags: 0

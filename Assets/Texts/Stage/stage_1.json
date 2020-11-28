@@ -120,7 +120,7 @@
             "type": 4,
             "position": [40, 0, 0],
             "rotation": [0, 0, 180],
-            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
             "time": [72.2, 73],
             "commands": []
         },
@@ -129,7 +129,7 @@
             "type": 4,
             "position": [-40, 3, 0],
             "rotation": [0, 0, 0],
-            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
             "time": [72.7, 73],
             "commands": []
         },
@@ -138,8 +138,62 @@
             "type": 4,
             "position": [-40, -3, 0],
             "rotation": [0, 0, 0],
-            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
             "time": [72.7, 73],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_2_1",
+            "type": 5,
+            "position": [40, 3.75, 0],
+            "rotation": [0, 0, 180],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [73.2, 75],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_2_2",
+            "type": 5,
+            "position": [-40, 2.25, 0],
+            "rotation": [0, 0, 0],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [73.4, 75],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_2_3",
+            "type": 5,
+            "position": [40, 0.75, 0],
+            "rotation": [0, 0, 180],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [73.6, 75],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_2_4",
+            "type": 5,
+            "position": [-40, -0.75, 0],
+            "rotation": [0, 0, 0],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [73.7, 75],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_2_5",
+            "type": 5,
+            "position": [40, -2.25, 0],
+            "rotation": [0, 0, 180],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [73.9, 75],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_2_6",
+            "type": 5,
+            "position": [-40, -3.75, 0],
+            "rotation": [0, 0, 0],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [74.1, 75],
             "commands": []
         },
         {
@@ -147,7 +201,7 @@
             "type": 4,
             "position": [0, 40, 0],
             "rotation": [0, 0, 270],
-            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "args": [10, 9.9, 1, 300, 300, 0, 1],
             "time": [74.2, 75],
             "commands": []
         },
@@ -156,7 +210,7 @@
             "type": 4,
             "position": [3, -40, 0],
             "rotation": [0, 0, 90],
-            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
             "time": [74.7, 75],
             "commands": []
         },
@@ -165,9 +219,105 @@
             "type": 4,
             "position": [-3, -40, 0],
             "rotation": [0, 0, 90],
-            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
             "time": [74.7, 75],
             "commands": []
+        },
+        {
+            "id": "phase_1_laser_4_1",
+            "type": 5,
+            "position": [3.75, 40, 0],
+            "rotation": [0, 0, 270],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [75.2, 77],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_4_2",
+            "type": 5,
+            "position": [2.25, -40, 0],
+            "rotation": [0, 0, 90],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [75.4, 77],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_4_3",
+            "type": 5,
+            "position": [0.75, 40, 0],
+            "rotation": [0, 0, 270],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [75.6, 77],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_4_4",
+            "type": 5,
+            "position": [-0.75, -40, 0],
+            "rotation": [0, 0, 90],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [75.7, 77],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_4_5",
+            "type": 5,
+            "position": [-2.25, 40, 0],
+            "rotation": [0, 0, 270],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [75.9, 77],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_4_6",
+            "type": 5,
+            "position": [-3.75, -40, 0],
+            "rotation": [0, 0, 90],
+            "args": [10, 9.99, 1, 300, 300, 0, 1],
+            "time": [76.1, 77],
+            "commands": []
+        },
+        {
+            "id": "phase_1_finale_1",
+            "type": 1,
+            "position": [-5, 5, 0],
+            "rotation": [0, 0, 315],
+            "args": [0.5, 0, 10, 5, 5, 90, 1],
+            "time": [76, 80.16],
+            "commands": []
+        },
+        {
+            "id": "phase_1_finale_2",
+            "type": 1,
+            "position": [5, 5, 0],
+            "rotation": [0, 0, 225],
+            "args": [0.5, 0, 10, 5, 5, 90, 1],
+            "time": [76, 80.16],
+            "commands": []
+        },
+        {
+            "id": "phase_1_finale_3",
+            "type": 1,
+            "position": [5, -5, 0],
+            "rotation": [0, 0, 135],
+            "args": [0.5, 0, 10, 5, 5, 90, 1],
+            "time": [76, 80.16],
+            "commands": []
+        },
+        {
+            "id": "phase_1_finale_4",
+            "type": 1,
+            "position": [-5, -5, 0],
+            "rotation": [0, 0, 45],
+            "args": [0.5, 0, 10, 5, 5, 90, 1],
+            "time": [76, 80.16],
+            "commands": [
+                {
+                    "time": 80.15,
+                    "command": "Clear.All",
+                    "args": []
+                }
+            ]
         }
     ]
 }

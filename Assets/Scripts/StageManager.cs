@@ -86,11 +86,6 @@ public class StageManager : MonoBehaviour {
     }
 
     private void StartSpawner(Command command) {
-
-        if (command.args[0] == 4f) {
-            Debug.Log(1);
-        }
-
         GameObject prefab = prefabs[Convert.ToInt32(command.args[0])];
         command.args.RemoveAt(0);
 
@@ -164,6 +159,18 @@ public class StageManager : MonoBehaviour {
                         break;
                     case "Off":
                         ((BlinkScript)script).Off();
+                        break;
+                }
+                break;
+            case "Clear":
+                script = spawners[command.id].GetComponent<ClearAllScript>();
+
+                if (script == null) {
+                    script = spawners[command.id].AddComponent<ClearAllScript>();
+                }
+                switch (method) {
+                    case "All":
+                        ((ClearAllScript)script).All();
                         break;
                 }
                 break;
