@@ -86,6 +86,11 @@ public class StageManager : MonoBehaviour {
     }
 
     private void StartSpawner(Command command) {
+
+        if (command.args[0] == 4f) {
+            Debug.Log(1);
+        }
+
         GameObject prefab = prefabs[Convert.ToInt32(command.args[0])];
         command.args.RemoveAt(0);
 
@@ -122,7 +127,7 @@ public class StageManager : MonoBehaviour {
                 if (script == null) {
                     script = spawners[command.id].AddComponent<SpinnerScript>();
                 }
-                
+
                 switch (method) {
                     case "Linear":
                         ((SpinnerScript)script).Linear(command.args);

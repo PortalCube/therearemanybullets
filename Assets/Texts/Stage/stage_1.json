@@ -114,6 +114,60 @@
                     "args": [90, 0.8, -0.8, 11]
                 }
             ]
+        },
+        {
+            "id": "phase_1_laser_1_1",
+            "type": 4,
+            "position": [40, 0, 0],
+            "rotation": [0, 0, 180],
+            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "time": [72.2, 73],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_1_2",
+            "type": 4,
+            "position": [-40, 3, 0],
+            "rotation": [0, 0, 0],
+            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "time": [72.7, 73],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_1_3",
+            "type": 4,
+            "position": [-40, -3, 0],
+            "rotation": [0, 0, 0],
+            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "time": [72.7, 73],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_3_1",
+            "type": 4,
+            "position": [0, 40, 0],
+            "rotation": [0, 0, 270],
+            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "time": [74.2, 75],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_3_2",
+            "type": 4,
+            "position": [3, -40, 0],
+            "rotation": [0, 0, 90],
+            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "time": [74.7, 75],
+            "commands": []
+        },
+        {
+            "id": "phase_1_laser_3_3",
+            "type": 4,
+            "position": [-3, -40, 0],
+            "rotation": [0, 0, 90],
+            "args": [10, 9.99, 1, 200, 200, 0, 1],
+            "time": [74.7, 75],
+            "commands": []
         }
     ]
 }

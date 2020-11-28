@@ -26,6 +26,60 @@
             "needCanvas": true,
             "start": 8.3,
             "end": 12
+        },
+        {
+            "id": "phase1_laser_warning_1_1",
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "type": 4,
+            "needCanvas": false,
+            "start": 70.7,
+            "end": 72.2
+        },
+        {
+            "id": "phase1_laser_warning_1_2",
+            "position": [0, 3, 0],
+            "rotation": [0, 0, 0],
+            "type": 4,
+            "needCanvas": false,
+            "start": 71.2,
+            "end": 72.7
+        },
+        {
+            "id": "phase1_laser_warning_1_3",
+            "position": [0, -3, 0],
+            "rotation": [0, 0, 0],
+            "type": 4,
+            "needCanvas": false,
+            "start": 71.2,
+            "end": 72.7
+        },
+        {
+            "id": "phase1_laser_warning_3_1",
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 90],
+            "type": 4,
+            "needCanvas": false,
+            "start": 72.7,
+            "end": 74.2
+        },
+        {
+            "id": "phase1_laser_warning_3_2",
+            "position": [3, 0, 0],
+            "rotation": [0, 0, 90],
+            "type": 4,
+            "needCanvas": false,
+            "start": 73.2,
+            "end": 74.7
+        },
+        {
+            "id": "phase1_laser_warning_3_3",
+            "position": [-3, 0, 0],
+            "rotation": [0, 0, 90],
+            "type": 4,
+            "needCanvas": false,
+            "start": 73.2,
+            "end": 74.7
         }
     ]
 }

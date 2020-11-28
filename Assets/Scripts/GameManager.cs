@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
     public Text retryText;
     public bool gameActive = true;
     public bool removeObj = false;
+    public bool debugMode = false;
+    public float startPosition = 0f;
     public AudioSource music;
     Camera cam;
 
@@ -29,7 +31,7 @@ public class GameManager : MonoBehaviour {
         Screen.SetResolution(800, 800, false);
 
         Init();
-        music.time = 0f;
+        music.time = startPosition;
     }
 
     void Init() {
@@ -86,6 +88,9 @@ public class GameManager : MonoBehaviour {
     }
 
     public void GameOver(Vector3 position) {
+        if (debugMode) {
+            return;
+        }
         gameActive = false;
 
         // 음악 느려지며 중지 -- disabled

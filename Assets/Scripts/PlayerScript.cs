@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
-    public GameObject bullet;
-
     // Start is called before the first frame update
     void Start()
     {
