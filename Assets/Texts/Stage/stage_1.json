@@ -310,7 +310,7 @@
             "position": [-5, -5, 0],
             "rotation": [0, 0, 45],
             "args": [0.5, 0, 10, 5, 5, 90, 1],
-            "time": [76, 80.17],
+            "time": [76, 80.19],
             "commands": [
                 {
                     "time": 80.15,
@@ -493,6 +493,81 @@
                     "time": 109.4,
                     "command": "Move.Linear",
                     "args": [90, 2]
+                }
+            ]
+        },
+        {
+            "id": "phase_3_death_trigger_1",
+            "type": 8,
+            "position": [0, 3.25, 0],
+            "rotation": [0, 0, 0],
+            "args": [10, 9.99, 1, 0, 0, 0, 0],
+            "time": [116.2, 116.5],
+            "commands": []
+        },
+        {
+            "id": "phase_3_death_trigger_2",
+            "type": 8,
+            "position": [0, -3.25, 0],
+            "rotation": [0, 0, 0],
+            "args": [10, 9.99, 1, 0, 0, 0, 0],
+            "time": [116.2, 116.5],
+            "commands": []
+        },
+        {
+            "id": "phase_3_small_bullet",
+            "type": 7,
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "args": [0.5, 0.49, 18, 3, 3, 360, 1],
+            "time": [120.2, 120.8],
+            "commands": [
+                {
+                    "time": 120.2,
+                    "command": "Spin.Linear",
+                    "args": [20]
+                }
+            ]
+        },
+        {
+            "id": "phase_3_finale_1",
+            "type": 7,
+            "position": [7, 0, 0],
+            "rotation": [0, 0, 180],
+            "args": [0.5, 0, 2, 2, 3.5, 30, 0],
+            "time": [126.2, 159.5],
+            "commands": []
+        },
+        {
+            "id": "phase_3_finale_2",
+            "type": 7,
+            "position": [-7, 0, 0],
+            "rotation": [0, 0, 0],
+            "args": [0.5, 0, 2, 2, 3.5, 30, 0],
+            "time": [134, 159.5],
+            "commands": []
+        },
+        {
+            "id": "phase_3_finale_3",
+            "type": 7,
+            "position": [0, 7, 0],
+            "rotation": [0, 0, 270],
+            "args": [0.5, 0, 4, 2, 3, 100, 0],
+            "time": [141, 159.5],
+            "commands": []
+        },
+        {
+            "id": "phase_3_finale_4",
+            "type": 7,
+            "position": [0, -7, 0],
+            "rotation": [0, 0, 90],
+            "args": [0.5, 0, 4, 2, 3, 100, 0],
+            "time": [149, 159.53],
+            "commands": [
+                {
+                    "time": 159.5,
+                    "command": "Clear.All",
+                    "args": []
                 }
             ]
         }

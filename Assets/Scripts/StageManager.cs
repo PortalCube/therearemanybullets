@@ -61,6 +61,7 @@ public class StageManager : MonoBehaviour {
                 }
             }
         });
+
     }
 
     // Update is called once per frame

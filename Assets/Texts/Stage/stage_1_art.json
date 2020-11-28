@@ -548,6 +548,24 @@
             "needCanvas": false,
             "start": 80.12,
             "end": 80.18
+        },
+        {
+            "id": "phase3_trigger_warning_1",
+            "position": [0, 3.25, 0],
+            "rotation": [0, 0, 0],
+            "type": 7,
+            "needCanvas": false,
+            "start": 113.2,
+            "end": 116.3
+        },
+        {
+            "id": "phase3_trigger_warning_2",
+            "position": [0, -3.25, 0],
+            "rotation": [0, 0, 0],
+            "type": 7,
+            "needCanvas": false,
+            "start": 113.2,
+            "end": 116.3
         }
     ]
 }
