@@ -1617,7 +1617,7 @@ MonoBehaviour:
   gameActive: 1
   removeObj: 0
   debugMode: 1
-  startPosition: 68
+  startPosition: 95
   music: {fileID: 1830936665}
   retry: -1
 --- !u!4 &1830936664
@@ -1767,6 +1767,7 @@ MonoBehaviour:
   - {fileID: 6541530324688189761, guid: 4c52610d80f27ac47b356a8a2658ec0d, type: 3}
   - {fileID: 283456808066001790, guid: 51bada4c5bf897e4198e16b536978582, type: 3}
   - {fileID: 8688960091706509738, guid: acb0255aba15b40448af4c63cf803a13, type: 3}
+  - {fileID: 6577110119160169696, guid: 89463c47cf063ff48b4c6a8f08a98e1c, type: 3}
 --- !u!4 &1864793022
 Transform:
   m_ObjectHideFlags: 0

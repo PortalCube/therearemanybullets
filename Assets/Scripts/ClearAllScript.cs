@@ -24,7 +24,7 @@ public class ClearAllScript : MonoBehaviour
 
     IEnumerator ClearAndReset() {
         float t = 0.0f;
-        while (t <= 0.1f) {
+        while (t <= 0.005f) {
             t += Time.deltaTime;
             yield return null;
         }
