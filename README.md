@@ -7,8 +7,7 @@
 약 2분 40초 동안 죽지 않고 무수히 많은 총알 세례를 버텨내시면 됩니다!
 과연 몇트만에 클리어 해낼 수 있을까요...?
 
-[Alpha 4 다운로드](https://github.com/PortalCube/therearemanybullets/releases/tag/v0.0.4)<br>
-**주의: 마지막 페이즈 구간(1분 52초 ~ 2분 40초)이 미완성되어있는 버전입니다.**
+[Beta 1 다운로드](https://github.com/PortalCube/therearemanybullets/releases/tag/v0.1.0)<br>
 
 # 기본 정보
 
@@ -31,7 +30,7 @@ bgm에 맞춰서 나타나는 무수한 총알들을 피하시면 됩니다. 약
 
 ## 난이도
 
-조금 어렵습니다. 탄막 게임을 잘 못하는 사람들을 위해 이지모드가 준비될 예정이었으나.. 개발 시간이 부족한 관계로 제공되지 않습니다..
+조금 어렵습니다. 탄막 게임을 잘 못하는 사람들을 위해 이지모드가 준비될 예정이었으나.. 개발 시간이 부족한 관계로 제공되지 않습니다. 양해바랍니다.
 
 ## 장르
 
@@ -42,6 +41,7 @@ bgm에 맞춰서 나타나는 무수한 총알들을 피하시면 됩니다. 약
 <img src="https://raw.githubusercontent.com/PortalCube/therearemanybullets/master/Github/Screenshot_1.png" width="360px"></img>
 <img src="https://raw.githubusercontent.com/PortalCube/therearemanybullets/master/Github/Screenshot_2.png" width="360px"></img>
 <img src="https://raw.githubusercontent.com/PortalCube/therearemanybullets/master/Github/Screenshot_3.png" width="360px"></img>
+<img src="https://raw.githubusercontent.com/PortalCube/therearemanybullets/master/Github/Screenshot_4.png" width="360px"></img>
 
 # 기타 정보
 
