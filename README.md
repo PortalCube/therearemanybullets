@@ -38,8 +38,7 @@ bgm에 맞춰서 나타나는 무수한 총알들을 피하시면 됩니다. 약
 # 기타 정보
 
 ## 저작권
-
-음원을 제외한 모든 소스 코드 및 리소스는 MIT 라이선스하에 배포됩니다.
+음원을 제외한 모든 소스 코드 및 리소스는 CC BY-NC-SA 3.0 하에 배포됩니다.
 
 ## 음원
 Frums - theyaremanycolors (https://soundcloud.com/frums/theyaremanycolors)
